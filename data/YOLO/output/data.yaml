@@ -1,0 +1,6 @@
+names:
+- class_0
+nc: 1
+task: segment
+train: train
+val: val

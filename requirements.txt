@@ -1,0 +1,15 @@
+conda create -n yolo11 python=3.12
+conda activate yolo11
+
+# 安装基础依赖
+conda install -c conda-forge pyqt=5
+conda install -c conda-forge opencv
+conda install -c conda-forge numpy
+
+# 安装ultralytics
+pip install ultralytics
+
+# 安装其他可能需要的包
+pip install torch torchvision
+pip install Pillow
+pip install matplotlib
