@@ -5,7 +5,7 @@ from PIL import Image
 import cv2
 from pathlib import Path
 
-def json2png(label_names=['line'], json_dir='data/YOLO/rawdata/json', output_dir='data/YOLO/rawdata/masks'):
+'''def json2png(label_names=['line'], json_dir='data/YOLO/rawdata/json', output_dir='data/YOLO/rawdata/masks'):
     # 修改标签映射，索引从1开始 重要
     label_to_idx = {label: idx for idx, label in enumerate(label_names)}
     print(f"标签映射: {label_to_idx}")  # 调试用
@@ -50,9 +50,9 @@ def json2png(label_names=['line'], json_dir='data/YOLO/rawdata/json', output_dir
         
         print(f"处理: {json_file.name} -> {mask_path}")
         print(f"掩码中的唯一值: {np.unique(mask)}")  # 调试用
+'''
 
-
-def json2txt(json_dir='data/YOLO/rawdata/json', output_dir='data/YOLO/rawdata/labels', 
+def json2txt(json_dir='data/YOLO/rawdata/json', output_dir='data/YOLO/rawdata/labels_txt', 
         label_names=['line'], image_height=None, image_width=None):
     # 创建标签到索引的映射
     label_to_idx = {label: idx for idx, label in enumerate(label_names)}
